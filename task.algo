@@ -1,0 +1,15 @@
+FUNCTION Ispalindrome(str) : string
+VAR
+     str,i:= STRING
+BEGIN
+
+  let i = 0;
+    WHILE (i < str.length) DO
+        let reversed = str.split("").reverse().join("")
+        return str ===reversed
+    END_WHILE
+
+    RETURN str;
+END
+
+Ispalindrome("gag", "kayak", "php", "radar", "")
